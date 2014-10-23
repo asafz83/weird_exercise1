@@ -3,7 +3,7 @@ function enterPressed(e){
 	if (screenValue.trim().length  == 0) {
 		return;
 	}
-	if (!e.ctrlKey) {
+	if (e.ctrlKey == false) {
 		document.getElementById("screen").value = '';
 	}
 	var historyList = document.querySelector(".historyFrame > ul");
